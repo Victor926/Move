@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --cor_1: #1C4847;
+  --cor_2: #F0EBD8;
+  --cor_3: #709090;
+  --cor_4: #C7DFDF;
+  --cor_5: #121212;
+  --cor_6: #EEEEEE;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, var(--cor_3), var(--cor_6));
+}
+
+#area_cabecalho {
+  width: 350px;
+  height: 60px;
+  background-color: var(--cor_1);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #FAFAFA;
+  font-size: 25px;
+  font-style: bolder;
+  padding-left: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#area_cabecalho a {
+  cursor: pointer;
+  color: var(--cor_6);
+}
+
+#area_cabecalho a:hover {
+  color: grey;
+}
+
+#mensagem {
+  padding-left: 10px;
+}
+
+#area_cartao {
+  margin: 25px;
+  height: 165px;
+  background: linear-gradient(225deg, #1C4847, #628989);
+  border-radius: 25px;
+  color: var(--cor_6);
+  position: relative;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#msg_saldo {
+  position: absolute;
+  font-size: 25px;
+  left: 15px;
+  top: 15px;
+}
+
+#saldo {
+  position: absolute;
+  font-size: 40px;
+  right: 15px;
+  bottom: 15px;
+}
+
+#real {
+  font-size: 25px;
+}
+
+#area_principal {
+  width: 100%;
+  background-color: #1C4847;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.caixa_opc {
+  height: 100px;
+  width: 320px;
+  background: linear-gradient(180deg, var(--cor_6), #BABABA);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.simbolo {
+  color: #1C4847;
+}
+.caixa_opc:hover {
+  background: grey;
+  color: var(--cor_6);
+}
+
+.opc {
+  padding-left: 15px;
+  font-size: 25px;
+}
+
+.opc_2 {
+  padding-right: 15px;
+  justify-content: space-between;
+}
+
+.seta {
+  padding-left: 15px;
+}
+
+
+#area_principal a {
+  color: #121212;
+  text-decoration: none;
+}
+
+#area_principal a:hover {
+  color: var(--cor_1);
+  font-style: bold;
+  text-decoration: none;
+  
+}
+
+#tipo_de_pagamento {
+  text-align: left;
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --cor_1: #1C4847;
+  --cor_2: #F0EBD8;
+  --cor_3: #709090;
+  --cor_4: #C7DFDF;
+  --cor_5: #121212;
+  --cor_6: #EEEEEE;
+}
+
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, #1C4847, #709090);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#area_logo{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #EEEEEE;
+}
+
+#logo_img {
+  display: show;
+  width: 150px;
+  padding-top: 30px;
+  padding-bottom: 0px;  
+}
+
+#logo {
+  font-size: 120px;
+  font-family: 'Caveat', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-top: 50px;
+}
+
+#slogan {
+  padding-bottom: 30px;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#area_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#area_input {
+  width: 350px;
+  border: 1px solid #EEEEEE;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #EEEEEE,  #FEFEFE);
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+#area_cadastro {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #F0EBD8;
+}
+
+#area_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+#area_login input {
+  width: 250px;
+  height: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 0px;
+  border-bottom: 3px solid  #1C4847;
+  font-size: 16px;
+  color: #1C4847;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#area_login input:hover {
+  border: 0px;
+  border-bottom: 3px solid  #13302F;
+}
+
+#area_login input:focus {
+  border: 0px;
+  border-bottom: 3px solid  #13302F;
+}
+
+#area_login input::placeholder {
+  color: #1C4847
+}
+
+#botao_enviar {
+  background-color: #1C4847;
+  color: #EEEEEE;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 125px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#botao_enviar a {
+  text-decoration: none;
+  color: #FAFAFA; 
+}
+
+#area_login button:hover {
+  background-color: #13302F;
+}
+
+#esqueceu_senha:hover {
+  text-decoration: underline;
+}
+
+#link_cadastro{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+#link_cadastro:hover {
+  text-decoration: underline;
+}
