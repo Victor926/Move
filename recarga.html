@@ -25,23 +25,25 @@
 
   </div>
   
-  <div id="area_principal">
-    <div id="valor_recarga">
-      <label for="valor">Valor da Recarga: </label><br/>
-      <input type="number" id="valor" placeholder="0,00" name="valor" required><br/>
+  <form id="formulario" onsubmit="enviarFormulario(event)">
+    <span id="msg_realizar_recarga">REALIZAR RECARGA</span>
+    <div id="area_tipo">
+      <label for="tipoPagamento" class="msg">Tipo de Pagamento:</label><br>
+      <select id="tipoPagamento" name="tipoPagamento">
+        <option value="credito">Cartão de Crédito</option>
+        <option value="debito">Cartão de Débito</option>
+        <option value="pix">PIX</option>
+      </select>
     </div>
-    <div id="tipo_de_pagamento">
-      <span>Tipo de Pagamento</span><br/>
-
-      <button id="pagamento">Cartão Crédito</button>
-      <button id="pagamento">Cartão Débito</button>
-      <button id="pagamento">Pix</button>
-
+    <div id="area_valor">
+      <label for="valor" class="msg" >Valor:</label><br>
+      <input type="text" id="valor" name="valor" placeholder="0,00">
     </div>
-    <div>
-      <button id="botao_pagar">"Pagar"</button>
+    <div id="area_botao_gerenciar">
+      <button type="submit" class="botao_enviar">Realizar Pagamento</button>
     </div>
-  </div>
+</form>
+  
 </body>
 
 </html>

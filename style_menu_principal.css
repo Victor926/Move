@@ -107,13 +107,14 @@ body {
   color: #1C4847;
 }
 .caixa_opc:hover {
-  background: grey;
+  background: linear-gradient(180deg, #BABABA, grey);
   color: var(--cor_6);
 }
 
 .opc {
   padding-left: 15px;
   font-size: 25px;
+  display: grid;
 }
 
 .opc_2 {
@@ -134,10 +135,148 @@ body {
 #area_principal a:hover {
   color: var(--cor_1);
   font-style: bold;
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
 
-#tipo_de_pagamento {
+#formulario {
+  width: 100%;
+  background-color: #1C4847;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: left;
+  padding-top: 30px;
+  color: var(--cor_6);
 }
+
+.msg {
+  font-size: 18px;
+  font-style: normal;
+  padding-top: 15px;
+}
+
+#formulario select {
+  border: 0px solid var(--cor_6);
+  height: 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: var(--cor_1);
+  background-color: var(--cor_6);
+}
+
+#formulario input {
+  width: 250px;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 0px;
+  border-bottom: 3px solid var(--cor_3);
+  font-size: 16px;
+  color: var(--cor_1);
+  background-color: var(--cor_6);
+  margin-top: 15px;
+}
+
+#formulario select {
+  margin-top: 10px;
+}
+
+#area_botao {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+#area_valor {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#area_tipo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.botao_enviar {
+  color: var(--cor_6);
+  background-color: var(--cor_3);
+  border-radius: 30px;
+  width: 130px;
+  height: 60px;
+  border: none;
+  font-size: 18px;
+  font-style: bold;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.botao_enviar:hover {
+  color: var(--cor_3);
+  background-color: var(--cor_6);
+}
+
+#msg_realizar_recarga {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-shadow: #121212;
+}
+
+#formulario_gerenciar {
+  width: 100%;
+  background-color: #1C4847;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding-top: 30px;
+  color: var(--cor_6);
+  margin-top: 80px;
+}
+
+
+#formulario_gerenciar select {
+  border: 0px solid var(--cor_6);
+  height: 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: var(--cor_1);
+  background-color: var(--cor_6);
+}
+
+#formulario_gerenciar input {
+  width: 250px;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 0px;
+  border-bottom: 3px solid var(--cor_3);
+  font-size: 16px;
+  color: var(--cor_1);
+  background-color: var(--cor_6);
+  margin-top: 20px;
+}
+
+#formulario_gerenciar select {
+  margin-top: 10px;
+}
+
+#area_botao_gerenciar {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#formulario_gerenciar a {
+  text-decoration: none;
+  color: var(--cor_5);
+}
+
+
