@@ -113,7 +113,7 @@ body {
 
 .opc {
   padding-left: 15px;
-  font-size: 25px;
+  font-size: 15px;
   display: grid;
 }
 
@@ -278,5 +278,22 @@ body {
   text-decoration: none;
   color: var(--cor_5);
 }
+].container_rotas {
+  width: 80%;
+  margin: 0 auto;
+}
 
+.container_rotas h1 {
+  text-align: center;
+}
+
+.container_rotas ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.container_rotas li {
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
 
