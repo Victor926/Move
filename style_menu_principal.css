@@ -113,6 +113,13 @@ body {
 
 .opc {
   padding-left: 15px;
+  font-size: 25px;
+  display: grid;
+}
+
+
+.opc_3 {
+  padding-left: 15px;
   font-size: 15px;
   display: grid;
 }
