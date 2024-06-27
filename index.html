@@ -42,6 +42,13 @@
         event.preventDefault(); // Prevents the default form submission
         window.location.href = 'menu_principal.html'; // Redirects to the desired URL
     });
+  
+    document.addEventListener('DOMContentLoaded', function () {
+        const saldo = localStorage.getItem('saldo');
+        if (saldo) {
+            document.getElementById('qtd').innerText = saldo;
+        }
+    });
 </script>
 
 </html>
