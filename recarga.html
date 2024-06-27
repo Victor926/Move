@@ -46,4 +46,26 @@
   
 </body>
 
+<script>
+    function enviarFormulario(event) {
+      event.preventDefault(); // Prevenir o comportamento padrão do formulário
+      
+      // Pegar o valor do input
+      let valorInput = document.getElementById('valor').value;
+      
+      // Converter o valor para número
+      valorInput = parseFloat(valorInput.replace(',', '.'));
+      
+      // Pegar o valor atual do saldo
+      let saldoAtual = parseFloat(document.getElementById('qtd').innerText.replace(',', '.'));
+
+      // Somar os valores
+      let novoSaldo = saldoAtual + valorInput;
+
+      // Atualizar o saldo na tela
+      document.getElementById('qtd').innerText = novoSaldo.toFixed(2).replace('.', ',');
+    }
+  </script>
+</html>
+
 </html>
