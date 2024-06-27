@@ -12,7 +12,7 @@
 
 <body>
   <div id="area_cabecalho">
-    <a href="menu_principal.html"><i class="fa fa-arrow-left" aria-hidden="true"></a></i>
+    <a href="menu_principal.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
     <span id="mensagem">Recarga</span>
   </div>
 
@@ -22,7 +22,6 @@
       <span id="real">R$</span>
       <span id="qtd">0,00</span>
     </span>
-
   </div>
   
   <form id="formulario" onsubmit="enviarFormulario(event)">
@@ -36,36 +35,42 @@
       </select>
     </div>
     <div id="area_valor">
-      <label for="valor" class="msg" >Valor:</label><br>
+      <label for="valor" class="msg">Valor:</label><br>
       <input type="text" id="valor" name="valor" placeholder="0,00">
     </div>
     <div id="area_botao_gerenciar">
       <button type="submit" class="botao_enviar">Realizar Pagamento</button>
     </div>
-</form>
-  
-</body>
+  </form>
 
-<script>
+  <script>
     function enviarFormulario(event) {
       event.preventDefault(); // Prevenir o comportamento padrão do formulário
       
       // Pegar o valor do input
       let valorInput = document.getElementById('valor').value;
       
-      // Converter o valor para número
-      valorInput = parseFloat(valorInput.replace(',', '.'));
+      // Remover possíveis pontos e substituir vírgulas por pontos para garantir conversão correta
+      valorInput = valorInput.replace(/\./g, '').replace(',', '.');
       
-      // Pegar o valor atual do saldo
-      let saldoAtual = parseFloat(document.getElementById('qtd').innerText.replace(',', '.'));
+      // Converter o valor para número
+      let valorNumerico = parseFloat(valorInput);
+      
+      // Verificar se a conversão foi bem-sucedida e não é NaN
+      if (!isNaN(valorNumerico)) {
+        // Pegar o valor atual do saldo
+        let saldoAtual = parseFloat(document.getElementById('qtd').innerText.replace(',', '.'));
 
-      // Somar os valores
-      let novoSaldo = saldoAtual + valorInput;
+        // Somar os valores
+        let novoSaldo = saldoAtual + valorNumerico;
 
-      // Atualizar o saldo na tela
-      document.getElementById('qtd').innerText = novoSaldo.toFixed(2).replace('.', ',');
+        // Atualizar o saldo na tela
+        document.getElementById('qtd').innerText = novoSaldo.toFixed(2).replace('.', ',');
+      } else {
+        alert('Por favor, insira um valor válido para a recarga.');
+      }
     }
   </script>
-</html>
+</body>
 
 </html>
