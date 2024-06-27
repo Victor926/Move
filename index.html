@@ -18,7 +18,7 @@
   </div>
 
   <div id="area_login">
-    <form id="area_input">
+    <form id="area_input" onsubmit="return false;">
       <input type="number" id="CPF" placeholder="CPF" name="CPF"><br />
 
       <input type="text" id="senha" placeholder="Senha" name="senha"><br />
@@ -36,5 +36,12 @@
   </div>
   <script src="script.js"></script>
 </body>
+
+<script>
+    document.getElementById('botao_enviar').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevents the default form submission
+        window.location.href = 'menu_principal.html'; // Redirects to the desired URL
+    });
+</script>
 
 </html>
